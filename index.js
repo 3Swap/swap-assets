@@ -26,7 +26,7 @@ router.get('/assets_data', (req, res) => {
         let assetData = JSON.parse(
           fs.readFileSync(path.join(__dirname, 'chains', chain, asset, 'info.json')).toString()
         );
-        assetData = { ...assetData, image: `${req.headers.host}/${chain}/${asset}/logo` };
+        assetData = { ...assetData, image: `http://${req.headers.host}/${chain}/${asset}/logo` };
         let chainValues = chainData[chain];
         chainValues = _.assign(chainValues, { [asset]: assetData });
         chainData = _.assign(chainData, { [chain]: { ...chainValues } });
