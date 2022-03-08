@@ -1,0 +1,8 @@
+{
+  "name": "Binance Testnet",
+  "symbol": "BSC",
+  "explorer": "https://testnet.bscscan.com",
+  "native_currency": "Binance",
+  "decimals": 18,
+  "rpcUrl": "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/bsc/testnet"
+}

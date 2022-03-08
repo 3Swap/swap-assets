@@ -1,0 +1,8 @@
+{
+  "name": "Ethereum Ropsten",
+  "symbol": "ETH",
+  "explorer": "https://ropsten.etherscan.io",
+  "native_currency": "Ethereum",
+  "decimals": 18,
+  "rpcUrl": "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/eth/ropsten"
+}

@@ -38,6 +38,22 @@ router.get('/assets_data', (req, res) => {
   }
 });
 
+router.get('/chains_data', (req, res) => {
+  try {
+    const chains = fs.readdirSync(path.join(__dirname, 'chains'));
+
+    let chainData = {};
+
+    for (const chain of chains) {
+      const info = JSON.parse(fs.readFileSync(path.join(__dirname, 'chains', chain, 'info.json')).toString());
+      chainData = _.assign(chainData, { [chain]: { ...info } });
+    }
+    return res.status(200).json({ ...chainData });
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
 router.get('/:chain/:asset/logo', (req, res) => {
   return res.sendFile(path.join(__dirname, 'chains', req.params.chain, req.params.asset, 'logo.svg'));
 });

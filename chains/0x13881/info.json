@@ -1,0 +1,8 @@
+{
+  "name": "Polygon Mumbai",
+  "symbol": "MATIC",
+  "explorer": "https://mumbai.polygonscan.com",
+  "native_currency": "Matic",
+  "decimals": 18,
+  "rpcUrl": "https://speedy-nodes-nyc.moralis.io/558120230227a848a2bb7043/polygon/mumbai"
+}

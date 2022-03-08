@@ -1,0 +1,8 @@
+{
+  "name": "Fantom Testnet",
+  "symbol": "FTM",
+  "explorer": "https://testnet.ftmscan.com",
+  "native_currency": "Fantom Coin",
+  "decimals": 18,
+  "rpcUrl": "https://rpc.testnet.fantom.network"
+}
