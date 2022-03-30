@@ -1,0 +1,8 @@
+{
+  "name": "Telos EVM",
+  "symbol": "TLOS",
+  "explorer": "https://testnet.teloscan.io/",
+  "native_currency": "Telos",
+  "decimals": 18,
+  "rpcUrl": "https://testnet.telos.net/evm"
+}
